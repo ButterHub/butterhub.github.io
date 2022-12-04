@@ -9,9 +9,9 @@ html {
 }
 
 @viewport {
-  zoom: 8.0;
+  zoom: 4.0;
   min-zoom: 1.0;
-  max-zoom: 8.0;
+  max-zoom: 4.0;
 }
 
 Body {
@@ -142,7 +142,7 @@ Body {
     position: relative;
     width: 30px;
     height: 30px;
-    margin: 0 118px;
+    margin: 0 18px;
     border-radius: 50%;
     background: #4fc3dc;
     box-shadow: 0 0 0 10px #4fc3dc44,
@@ -153,18 +153,34 @@ Body {
 }
 
 .bubbles span:nth-child(even) {
-    background: #ff2d75;
-    box-shadow: 0 0 0 10px #ff2d7544,
-    0 0 50px #ff2d75,
-    0 0 50px #ff2d75;
+    background: #ff5e00;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 0 10px #a43c0044,
+    0 0 50px #ff5e00,
+    0 0 50px #ff5e00;
 }
 
 @keyframes animate {
     0% {
-        transform: translateY(200vh) scale(0);
+        transform: translateY(200vh) scale(0) translateX(-50vh);
     }
+    
+    50% {
+        transform: translateX(-50vh)
+    }
+    65% {
+        transform: translateY(-10vh) scale(0.5) translateX(-50vh);
+    }
+
+    68% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
     100% {
-        transform: translateY(-10vh) scale(0.5);
+        transform: scale(0);
+        display: none;
     }
 }
 
