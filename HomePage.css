@@ -9,9 +9,9 @@ html {
 }
 
 @viewport {
-  zoom: 4.0;
+  zoom: 8.0;
   min-zoom: 1.0;
-  max-zoom: 4.0;
+  max-zoom: 8.0;
 }
 
 Body {
