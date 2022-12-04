@@ -163,24 +163,12 @@ Body {
 
 @keyframes animate {
     0% {
-        transform: translateY(200vh) scale(0) translateX(-50vh);
-    }
-    
-    50% {
-        transform: translateX(-50vh)
-    }
-    65% {
-        transform: translateY(-10vh) scale(0.5) translateX(-50vh);
-    }
-
-    68% {
-        transform: scale(0);
-        opacity: 1;
+        transform: translateY(200vh) scale(0);
     }
 
     100% {
-        transform: scale(0);
-        display: none;
+        transform: translateY(-10vh) scale(0.5);
+        opacity: 1;
     }
 }
 
