@@ -149,12 +149,14 @@ Body {
     0 0 50px #4fc3dc,
     0 0 50px #4fc3dc;
     animation: animate 15s linear infinite;
-    animation-duration: calc(200s / var(--i));
+    animation-duration: calc(200s / var(--i) * .9);
 }
 
 .bubbles span:nth-child(even) {
     background: #ff5e00;
-    box-shadow: 0 0 0 10px #a43c0044,
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 0 20px #a43c0044,
     0 0 50px #ff5e00,
     0 0 50px #ff5e00;
 }
