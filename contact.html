@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Contact.css" />
+    <meta content="ButterHub - Contact Us" property="og:title" />
+    <meta content="Contact the Official ButterHub here." property="og:description" />
+    <meta content="https://butterhub.github.io/contact" property="og:url" />
+    <meta content="ButterHub" property="og:site_name" />
+    <meta content="./images/ButterHubBanner.png" property="og:image" />
+    <meta content="#007bff" data-react-helmet="true" name="theme-color" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>ButterHub - Contact Us</title>
+  </head>
+  <body>
+    <nav href="#" class="nav">
+      <img class="icon" src="./images/ButterHubIcon.png" />
+      <a href="#" class="nav__link">Home</a>
+      <a href="#about" class="nav__link">About</a>
+    </nav>
+
+    <form class="cen" action="./contactEmail.php" method="post">
+      <label class="quesT">Your Question</label>
+      <textarea class="ques" name="question" cols="1" rows="1" maxlength="50"></textarea>
+
+      <label class="descT">Your Description</label>
+      <textarea class="desc" name="description" cols="100" rows="20" maxlength="1200" minlength="50"></textarea>
+
+      <input class="sub" type="submit" name="send" value="Submit" />
+    </form>
+
+    <script type="text/javascript">
+      // Enable Hidden Navigation Bar
+      {
+        const nav = document.querySelector(".nav");
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener("scroll", () => {
+          if (lastScrollY < window.scrollY) {
+            nav.classList.add("nav--hidden");
+          } else {
+            nav.classList.remove("nav--hidden");
+          }
+
+          lastScrollY = window.scrollY;
+        });
+      }
+    </script>
+  </body>
+</html>

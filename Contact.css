@@ -1,0 +1,122 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@viewport {
+  zoom: 8.0;
+  min-zoom: 1.0;
+  max-zoom: 8.0;
+}
+
+.cen {
+    width: 500px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+.quesT {
+    position: absolute;
+    top: 120px;
+    width: fit-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.sub {
+    position: absolute;
+    top: 600px;
+    width: 50vh;
+    height: 2em;
+    background: #00b7ff;
+    border-radius: 50px;
+    border-style: dotted;
+    transition: transform 0.5s;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    font-style: oblique;
+}
+
+.sub:hover {
+    transform: scale(1.05);
+}
+
+.ques {
+    text-align: center;
+    position: absolute;
+    top: 180px;
+    font-size: 20px;
+    height: 50px;
+    width: 100vh;
+    vertical-align: center;
+    max-width: 100vh;
+    max-height: 50px;
+    min-width: 100vh;
+    min-height: 50px;
+}
+
+.descT {
+    position: absolute;
+    width: fit-content;
+    top: 250px;
+    height: 50px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.desc {
+    position: absolute;
+    width: 80vh;
+    height: 250px;
+    top: 325px;
+    max-width: 80vh;
+    max-height: 250px;
+    min-width: 80vh;
+    min-height: 250px;
+}
+
+Body {
+    min-height: 200vh;
+    min-width: 100vh;
+    background: #0c192c;
+    --nav-height: 100px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    width: 100%;
+    z-index: 9000;
+    height: var(--nav-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #127dba;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    transition: transform 0.2s;
+}
+.nav__link {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 2em;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.nav--hidden {
+    transform: translateY(calc(-1 * var(--nav-height)));
+    box-shadow: none;
+}
+.icon {
+    width: 70px;
+    margin-left: 50px;
+    position: relative;
+}
