@@ -2,12 +2,13 @@
 $question = $_POST['question'];
 $desc = $_POST['description'];
 
-$headers = "Question: $question";
-$sent = mail('ButterHub_Offical@outlook.com', 'ButterHub Form Submission', $desc, $headers);
+$sent = mail('ButterHub_Offical@outlook.com', $question, 'ButterHub Form Submission: ' + $desc);
 
 if ($sent) {
 
-?><html>
+?>
+
+    <html>
 
     <head>
         <title>ButterHub - Form Sent</title>
@@ -43,28 +44,8 @@ if ($sent) {
 
       <input class="sub" type="submit" name="send" value="Submit" />
     </form> -->
-        <span class="ty" style="
-        width: fit-content;
-        height: 50px;
-        top: 150px;
-        position: absolute;
-        text-align: center;
-        font-size: 50px;
-        color: white;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bolder;
-      ">Thank you for your Form!</span>
-        <span class="tyD" style="
-        width: 150vh;
-        height: 50px;
-        top: 250px;
-        position: absolute;
-        text-align: center;
-        font-size: 20px;
-        color: white;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bolder;
-      ">We will respond to you as quickly as possible, please be patient and don't spam us. <br />
+        <span class="ty" style="width: fit-content;height: 50px;top: 150px;position: absolute;text-align: center;font-size: 50px;color: white;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: bolder;">Thank you for your Form!</span>
+        <span class="tyD" style="width: 150vh;height: 50px;top: 250px;position: absolute;text-align: center;font-size: 20px;color: white;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: bolder;">We will respond to you as quickly as possible, please be patient and don't spam us. <br />
             Spamming our Email will result in it being ignored and you being blacklisted.</span>
     </body>
 
@@ -73,7 +54,8 @@ if ($sent) {
 <?php
 
 } else {
-?><html>
+?>
+    <html>
 
     <head>
         <title>Butter Hub - Something went wrong</title>
