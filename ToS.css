@@ -21,7 +21,7 @@ Body {
     position: relative;
     top: 300px;
     font-size: 20px;
-    width: 100vh;
+    width: 200vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: lightgrey;
     display: flex;
@@ -32,7 +32,7 @@ Body {
 .tosTitle {
     position: absolute;
     top: -150px;
-    width: 100vh;
+    width: 150vh;
     color: rgb(232, 232, 232);
     font-weight: bolder;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
