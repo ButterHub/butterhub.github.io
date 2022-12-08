@@ -21,6 +21,7 @@ Body {
     position: relative;
     top: 300px;
     font-size: 20px;
+    width: 100vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: lightgrey;
     display: flex;
