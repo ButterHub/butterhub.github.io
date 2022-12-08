@@ -10,7 +10,7 @@ html {
 
 Body {
     min-height: 200vh;
-    min-width: 100vh;
+    min-width: 200vh;
     background: #0c192c;
     --nav-height: 100px;
 
