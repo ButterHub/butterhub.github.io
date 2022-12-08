@@ -18,7 +18,7 @@ html {
 .quesT {
     position: absolute;
     top: 120px;
-    width: fit-content;
+    width: 100vh
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     font-size: 50px;
@@ -28,7 +28,7 @@ html {
 .sub {
     position: absolute;
     top: 600px;
-    width: 50vh;
+    width: 100vh;
     height: 2em;
     background: #00b7ff;
     border-radius: 50px;
@@ -60,9 +60,9 @@ html {
 
 .descT {
     position: absolute;
-    width: fit-content;
     top: 250px;
     height: 50px;
+    width: 100vh;
     font-size: 50px;
     font-weight: bolder;
     color: white;
