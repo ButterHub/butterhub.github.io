@@ -8,16 +8,60 @@ html {
     scroll-behavior: smooth;
 }
 
+.buy-with-crypto {
+    position: absolute;
+    left: 900px;
+}
+
+.buy-with-crypto-prem {
+    position: absolute;
+    left: 1200px;
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    background-color: yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.buy-with-crypto {
+    position: absolute;
+    left: 900px;
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(0, 168, 224);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .crypto-button {
     position: absolute;
-    top: 600px;
-    left: 800px;
+    top: 700px;
+}
+
+.crypto-button-prem {
+    position: absolute;
+    top: 700px;
+    width: fit-content;
+    height: fit-content;
+    background-color: yellow;
 }
 
 @viewport {
-  zoom: -5.0;
-  min-zoom: -5.0;
-  max-zoom: 8.0;
+  zoom: 4.0;
+  min-zoom: 1.0;
+  max-zoom: 4.0;
 }
 
 Body {
