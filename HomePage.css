@@ -8,10 +8,14 @@ html {
     scroll-behavior: smooth;
 }
 
+.buy-with-crypto {
+    position: absolute;
+    left: 900px;
+}
+
 .crypto-button {
     position: absolute;
-    top: 600px;
-    left: 800px;
+    top: 700px;
 }
 
 @viewport {
