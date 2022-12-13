@@ -8,20 +8,16 @@ html {
     scroll-behavior: smooth;
 }
 
-.buy-with-crypto {
-    position: absolute;
-    left: 900px;
-}
-
 .crypto-button {
     position: absolute;
-    top: 700px;
+    top: 600px;
+    left: 800px;
 }
 
 @viewport {
-  zoom: 4.0;
-  min-zoom: 1.0;
-  max-zoom: 4.0;
+  zoom: -5.0;
+  min-zoom: -5.0;
+  max-zoom: 8.0;
 }
 
 Body {
