@@ -8,11 +8,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.buy-with-crypto {
-    position: absolute;
-    left: 900px;
-}
-
 .buy-with-crypto-prem {
     position: absolute;
     left: 1200px;
@@ -27,27 +22,6 @@ html {
     color: black;
     background-color: yellow;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.buy-with-crypto {
-    position: absolute;
-    left: 900px;
-    width: 150px;
-    height: 40px;
-    padding: 10px;
-    border-radius: 5px;
-    vertical-align: middle;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bolder;
-    color: white;
-    background-color: rgb(0, 168, 224);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.crypto-button {
-    position: absolute;
-    top: 700px;
 }
 
 .crypto-button-prem {
